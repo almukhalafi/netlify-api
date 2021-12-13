@@ -35,4 +35,18 @@ class NetlifySites extends Netlify
         }
     }
 
+    public function deleteSite($site_id){
+        $response = Http::accept('application/json')
+            ->withToken($this->access_token)
+            ->delete($this->base_url.'/sites/'.$site_id);
+        if($response->successful()){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+
+
 }
