@@ -1,0 +1,40 @@
+{
+    "name": "almukhalafi/netlify-api",
+    "description": "Netlify Api",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Almukhalafi\\NetlifyApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Almukhalafi\\NetlifyApi\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "authors": [
+        {
+            "name": "Abdulmajeed Almukhalafi",
+            "email": "a.almukhalafi@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Almukhalafi\\NetlifyApi\\Providers\\NetlifyApiServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
